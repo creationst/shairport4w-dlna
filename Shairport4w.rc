@@ -1,0 +1,476 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAY MENU
+BEGIN
+    POPUP "_Menu"
+    BEGIN
+        MENUITEM "Sh&ow",                       IDC_SHOW
+        MENUITEM "&Show ""Now Playing"" in Tray", ID_EDIT_TRAYTRACKINFO
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDCANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXT_OPTS DIALOGEX 0, 0, 203, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advanced Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Redirecting sound",IDC_STATIC,9,7,189,40
+    COMBOBOX        IDC_REDIRECTION,13,24,179,71,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Buffering",IDC_STATIC_BUFFERING,9,49,189,54
+    LTEXT           "min",IDC_STATIC,19,65,12,8
+    CONTROL         "",IDC_BUFFERING,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,13,77,179,21
+    LTEXT           "max",IDC_STATIC,175,65,14,8
+    GROUPBOX        "Soundcard",IDC_STATIC,7,105,189,40
+    COMBOBOX        IDC_SOUNDCARD,13,122,179,71,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Log to file",IDC_LOG_TO_FILE,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,151,47,10
+    CONTROL         "Suppress Meta Info",IDC_NO_META_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,151,79,10
+    CONTROL         "Disable Multimedia Controls",IDC_NO_NEDIA_CONTROLS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,162,103,10
+    DEFPUSHBUTTON   "OK",IDOK,93,177,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,147,177,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_EXT_OPTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        VERTGUIDE, 12
+        VERTGUIDE, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_WMC                 PNG                     "res\\wmc.png"
+IDB_PLAY                PNG                     "res\\play.png"
+IDB_PAUSE               PNG                     "res\\pause.png"
+IDB_PLAY_DISABLED       PNG                     "res\\play_disabled.png"
+IDB_PLAY_PRESSED        PNG                     "res\\play_pressed.png"
+IDB_FFW                 PNG                     "res\\fast_forward.png"
+IDB_FFW_DISABLED        PNG                     "res\\fast_forward_disabled.png"
+IDB_FFW_PRESSED         PNG                     "res\\fast_forward_pressed.png"
+IDB_PAUSE_DISABLED      PNG                     "res\\pause_disabled.png"
+IDB_PAUSE_PRESSED       PNG                     "res\\pause_pressed.png"
+IDB_REW                 PNG                     "res\\rewind.png"
+IDB_REW_DISABLED        PNG                     "res\\rewind_disabled.png"
+IDB_REW_PRESSED         PNG                     "res\\rewind_pressed.png"
+IDB_SKIP_PREV           PNG                     "res\\skip_to_prev.png"
+IDB_SKIP_PREV_DISABLED  PNG                     "res\\skip_to_prev_disabled.png"
+IDB_SKIP_PREV_PRESSED   PNG                     "res\\skip_to_prev_pressed.png"
+IDB_SKIP_NEXT           PNG                     "res\\skip_to_next.png"
+IDB_SKIP_NEXT_DISABLED  PNG                     "res\\skip_to_next_disabled.png"
+IDB_SKIP_NEXT_PRESSED   PNG                     "res\\skip_to_next_pressed.png"
+IDB_PUSH_PIN_PRESSED    PNG                     "res\\ppin_pressed.png"
+IDB_PUSH_PIN_RELEASED   PNG                     "res\\ppin_released.png"
+IDB_PROGRESS_SHADOW     PNG                     "res\\ProgressShadow.png"
+IDB_AD_SHADOW           PNG                     "res\\AdShadow.png"
+IDB_ART_SHADOW          PNG                     "res\\ArtShadow.png"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 254, 177
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,240,163
+    ICON            IDR_MAINFRAME,IDC_STATIC,116,26,20,20
+    CTEXT           "Shairport4w 1.0.0.40\n\n(c) Copyright 2013\nFrank Friemel, Philippe Dubois\nDaniel Latimer\n\nShairport4w is based on Shairport by James Laird",IDC_STATIC,42,49,169,59
+    LTEXT           "http://www.lightweightdream.com/shairport4w",IDC_STATIC_SHAIR_LNK,53,122,147,8
+    DEFPUSHBUTTON   "Close",IDOK,102,145,50,14
+END
+
+IDD_MAINDLG DIALOGEX 0, 0, 229, 215
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Shairport4w"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Airport Name",IDC_STATIC,8,8,43,8
+    EDITTEXT        IDC_APNAME,55,7,109,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Change...",IDC_CHANGENAME,169,7,53,32
+    LTEXT           "Password",IDC_STATIC,8,25,32,8
+    EDITTEXT        IDC_PASSWORD,55,25,109,14,ES_PASSWORD | WS_DISABLED
+    CONTROL         "Tray Icon",IDC_TRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,48,46,10
+    CONTROL         "Start minimized",IDC_START_MINIMIZED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,59,63,10
+    CONTROL         "Autostart",IDC_AUTOSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,71,44,10
+    PUSHBUTTON      "Modify Values...",IDC_UPDATE,143,66,80,14
+    GROUPBOX        "",IDC_STATIC_PANEL,7,80,215,104
+    CONTROL         "Track Info",IDC_INFOPANEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,88,49,10
+    RTEXT           "Static",IDC_STATIC_TIME_INFO_CURRENT,72,88,43,8
+    CONTROL         "",IDC_TIME_BAR,"Static",SS_BLACKFRAME,118,88,60,8
+    LTEXT           "Static",IDC_STATIC_TIME_INFO,182,88,39,8
+    CONTROL         "",IDC_INFO_BMP,"Static",SS_BLACKFRAME,14,102,74,74
+    EDITTEXT        IDC_STATIC_ARTIST,97,102,118,24,ES_MULTILINE | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATIC_TRACK,97,127,118,24,ES_MULTILINE | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STATIC_ALBUM,97,152,118,24,ES_MULTILINE | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "",IDC_CONTROL_PANEL,7,186,215,23
+    PUSHBUTTON      "Play",IDC_MM_SKIP_PREV,37,191,15,14
+    PUSHBUTTON      "Play",IDC_MM_REW,65,191,15,14
+    PUSHBUTTON      "Play",IDC_MM_PAUSE,93,191,15,14
+    PUSHBUTTON      "Play",IDC_MM_PLAY,121,191,15,14
+    PUSHBUTTON      "Play",IDC_MM_FFW,149,191,15,14
+    PUSHBUTTON      "Play",IDC_MM_SKIP_NEXT,177,191,15,14
+    CONTROL         "PushPin",IDC_PUSH_PIN,"Button",BS_OWNERDRAW | WS_TABSTOP,205,46,15,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 14
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+        HORZGUIDE, 16
+        HORZGUIDE, 39
+        HORZGUIDE, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Shairport4w.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,40
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.40"
+            VALUE "InternalName", "Shairport4w"
+            VALUE "LegalCopyright", "Copyright Frank Friemel 2013"
+            VALUE "OriginalFilename", "Shairport4w.exe"
+            VALUE "ProductName", "Shairport4w Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Shairport4w"
+    IDS_TRACK_LABEL         "Track"
+    IDS_TRAY_ACK            "Click here to restore App Window"
+    IDS_ALBUM_LABEL         "Album"
+    IDS_ARTIST_LABEL        "Artist"
+    IDS_NOW_PLAYING         "Now Playing"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENC)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDCANCEL
+    END
+    POPUP "E&dit"
+    BEGIN
+        MENUITEM "&Advanced...",                IDC_EXTENDED_OPTIONS
+        MENUITEM "&Show ""Now Playing"" in Tray", ID_EDIT_TRAYTRACKINFO
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHANGEUSER DIALOGEX 0, 0, 190, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Airport Name and Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,133,66,50,14
+    EDITTEXT        IDC_NAME,68,7,106,14,ES_AUTOHSCROLL
+    LTEXT           "Airport name",IDC_STATIC,22,10,42,8
+    LTEXT           "Password",IDC_STATIC,32,28,32,8
+    LTEXT           "Verify password",IDC_STATIC,12,46,52,8
+    EDITTEXT        IDC_PASS,68,25,106,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VERIFYPASS,68,43,106,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,81,66,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CHANGEUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        VERTGUIDE, 64
+        VERTGUIDE, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
